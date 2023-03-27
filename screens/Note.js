@@ -1,25 +1,8 @@
-import { StatusBar } from "expo-status-bar";
-import * as eva from "@eva-design/eva";
-import { KeyboardAvoidingView, StyleSheet, View } from "react-native";
-import {
-  NavigationContainer,
-  useFocusEffect,
-  useNavigation,
-} from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {
-  ApplicationProvider,
-  BottomNavigation,
-  BottomNavigationTab,
-  Button,
-  Divider,
-  Layout,
-  List,
-  ListItem,
-  Text,
-} from "@ui-kitten/components";
-import { useState } from "react";
-import AsyncStorage from "@react-native-community/async-storage";
+import { StyleSheet, View } from "react-native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { Button, Text } from "@ui-kitten/components";
+import React, { useState } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function Note({ route }) {
   const [notes, setNotes] = useState([]);

@@ -10,35 +10,39 @@ import {
   Layout,
   Text,
 } from "@ui-kitten/components";
+import CreateNote from "./screens/CreateNote";
+import AllNotes from "./screens/AllNotes";
+import Note from "./screens/Note";
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
-const UsersScreen = () => (
-  <Layout style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text category="h1">USERS</Text>
-  </Layout>
-);
+// const UsersScreen = () => (
+//   <Layout style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+//     <Text category="h1">USERS</Text>
+//   </Layout>
+// );
 
-const OrdersScreen = () => (
-  <Layout style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-    <Text category="h1">ORDERS</Text>
-  </Layout>
-);
+// const OrdersScreen = () => (
+//   <Layout style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+//     <Text category="h1">ORDERS</Text>
+//   </Layout>
+// );
 
 const BottomTabBar = ({ navigation, state }) => (
   <BottomNavigation
     selectedIndex={state.index}
     onSelect={(index) => navigation.navigate(state.routeNames[index])}
   >
-    <BottomNavigationTab title="USERS" />
-    <BottomNavigationTab title="ORDERS" />
+    <BottomNavigationTab title="Create" />
+    <BottomNavigationTab title="All Notes" />
   </BottomNavigation>
 );
 
 const TabNavigator = () => (
   <Navigator tabBar={(props) => <BottomTabBar {...props} />}>
-    <Screen name="Users" component={UsersScreen} />
-    <Screen name="Orders" component={OrdersScreen} />
+    <Screen name="Create" component={CreateNote} />
+    <Screen name="AllNotes" component={AllNotes} />
+    <Screen name="Note" component={Note} />
   </Navigator>
 );
 
