@@ -27,7 +27,7 @@ export default function CreateNote() {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <TextInput
         value={note}
         onChangeText={setNote}
