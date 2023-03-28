@@ -1,4 +1,4 @@
-# Notes_App
+# Notes App
 
 Librarie sused :
 react-native-async-storage/async-storage
