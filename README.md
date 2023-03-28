@@ -2,6 +2,7 @@
 
 Librarie sused :
 react-native-async-storage/async-storage
+
 react-navigation
 ui-kitten/components
 react-native-screens
