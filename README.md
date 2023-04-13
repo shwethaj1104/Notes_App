@@ -1,6 +1,6 @@
 # Notes App
 
-Librarie sused :
+Librariesused :
 react-native-async-storage/async-storage
 
 react-navigation
