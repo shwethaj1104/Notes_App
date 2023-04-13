@@ -1,6 +1,6 @@
 # Notes App
 
-Librariesused :
+Libraries used :
 react-native-async-storage/async-storage
 
 react-navigation
